@@ -1,0 +1,14 @@
+def main(): int {
+  int x = 20;
+
+  if (true) {
+    int x = 60;
+  } else {
+    print('nop');
+  }
+
+  print('x=');
+  println(x);
+
+  return 0;
+}

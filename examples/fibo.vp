@@ -1,0 +1,30 @@
+def fibo(n: int): int {
+  int result = -1;
+  if (n < 0) {
+    # nothing
+  } else {
+    if (n == 1) {
+      result = 0;
+    } else {
+      if (n == 2) {
+        result = 1;
+      } else {
+        result = fibo(n - 1) + fibo(n - 2);
+      }
+    }
+  }
+  return result;
+}
+
+def main(): int {
+  int result = fibo(9);
+  if (result < 0) {
+    println('incorrect input');
+  } else {
+    print('fibo(');
+    print(9);
+    print(')=');
+    println(result);
+  }
+  return 0;
+}

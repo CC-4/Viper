@@ -1,0 +1,8 @@
+def main(): int {
+
+  bool x = false;
+  println(!x);
+  println(!(!x));
+
+  return 0;
+}

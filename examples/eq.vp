@@ -1,0 +1,10 @@
+def main(): int {
+
+  println(2 == 2);
+  println(true == false);
+  println(true == true);
+  println('adios' == 'adios');
+  println('adios' == 'hola');
+
+  return 0;
+}

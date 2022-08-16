@@ -1,0 +1,10 @@
+def main(): int {
+
+  if (2 == 2) {
+    println('here');
+  } else {
+    println('what ?');
+  }
+
+  return 0;
+}

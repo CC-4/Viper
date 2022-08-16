@@ -1,0 +1,10 @@
+def main(): int {
+  bool exit = false;
+
+  while (!exit) {
+    print('here');
+    exit = true;
+  }
+
+  return 0;
+}

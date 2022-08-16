@@ -1,0 +1,6 @@
+def main(): int {
+  int x = 10;
+  x = 20;
+  print(x);
+  return 0;
+}

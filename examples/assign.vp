@@ -1,0 +1,9 @@
+def foo(x: int): int {
+  x = 20;
+  return x;
+}
+
+def main(): int {
+  print(foo(10));
+  return 0;
+}

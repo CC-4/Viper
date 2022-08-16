@@ -1,0 +1,8 @@
+def foo(x: int): void {
+  print(2);
+}
+
+def main(): int {
+  foo(0);
+  return 0;
+}

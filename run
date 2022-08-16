@@ -1,0 +1,3 @@
+#!/bin/bash
+
+jupiter runtime/runtime.s $@

@@ -1,0 +1,9 @@
+def main(): int {
+  int x = 10;
+
+  println(x <= 10);
+  println(x <= 20);
+
+
+  return 0;
+}
