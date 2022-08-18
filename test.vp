@@ -1,0 +1,10 @@
+# comentarios
+
+def main(): int {
+
+  str hola = "hola mundo";
+  str ch = charAt(hola, 5);
+  println(ch);
+
+  return 0;
+}

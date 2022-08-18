@@ -53,6 +53,7 @@ div_by_zero: .string "Exception: division by 0..."
 .globl def_print_bool
 .globl def_println_bool
 .globl def_input
+.globl def_charAt
 
 
 #################################################################
@@ -277,3 +278,34 @@ def_input:
   lw    ra 4(sp)
   addi  sp sp 12
   ret
+
+
+#################################################################
+#  char at                                                      #
+#                                                               #
+#  INPUT:                                                       #
+#  - string                                                     #
+#  - position                                                   #
+#                                                               #
+#  OUTPUT:                                                      #
+#  - a0: string                                                 #
+#################################################################
+def_charAt:
+  addi  sp sp -8
+  sw    fp 8(sp)
+  sw    ra 4(sp)
+  addi  fp sp 4
+  lw t2 8(fp)
+  lw t3 12(fp)
+  add t2 t2 t3
+  lb t2 0(t2)
+  li a0 9
+  li a1 4
+  ecall 
+  sb t2 0(a0)
+  sb zero 1(a0)
+  lw    fp 8(sp)
+  lw    ra 4(sp)
+  addi  sp sp 16
+  ret
+  
